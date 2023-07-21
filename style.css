@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: beige;  
+}
+#header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 250px;
+    height: 150px;
+    filter: invert(85%) ;
+}
+nav ul li{
+    display:inline-block;   
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color:aqua;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+nav ul li a:hover:after{
+    width: 100%;
+    transition: 0.3s;
+}
+.header-text{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 150%;
+    font-style: italic;
+    color:aliceblue;
+}
+.header-text h1 span{
+    color: aqua;
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0px;
+    color:aliceblue;
+    transition: 0.6s;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    filter: brightness(76%) drop-shadow(2px 2px 10px rgb(55 55 55));
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 50px;
+    font-weight: 600;
+    color: bisque;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-col-2 p{
+    font-size: 28px;
+    font-style: italic;
+    margin-top: 40px;
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+.s-title{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px 45% 50px 45%;
+    color: bisque;
+}
+.s-contents ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.s-contents ul li{
+    list-style: none;
+    margin: 80px 0px;
+}
+.s-contents ul li i{
+    font-size: 100px;
+    filter: drop-shadow(1px 1px 10px rgb(65, 65, 65));
+}
+#projects{
+    width: 100%;
+    height: 100vh;
+}
+.p-title{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px 45% 50px 45%;
+    color: bisque;
+}
+.project-contents{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 80px;
+    margin-left: 80px;
+}
+.work{
+    width: 430px;
+    height: 450px;
+    margin-top: 4rem;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    /*
+    box-shadow: 5px 10px 30px -7px rgba(240, 7, 7, 0.676);*/
+    cursor: pointer;
+    /*transition: transform 0.5s;*/
+    transition: box-shadow 0.2s;
+}
+.work:hover{
+    transform: scale(1);
+    /*box-shadow: 5px 10px 30px -7px rgba(240, 7, 7, 0.676);*/
+    box-shadow: 6px 10px 30px -7px rgb(125, 125, 125);
+}
+.project-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.description{
+    width: 100%;
+    height: 0;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.708),rgb(185, 14, 14));*/
+    background: linear-gradient(rgba(0 ,0, 0, 0.7), gray);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 20px;
+    transition: height 0.5s;
+    color: white;
+    text-shadow: 1px 1px 10px white;
+}
+.description h2{
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.work:hover .description{
+    height: 100%;
+}
+.description a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 60px;
+}
+.description a i{
+    padding: 10px;
+    border-radius: 40px;
+    background-color: azure;
+    color: black;
+    margin: 10px;
+}
+.description a:hover{
+    text-decoration: underline;
+    transition: 0.6s;
+}
+.description a i:hover{
+    background-color: gray;
+}
+.footer{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.073), rgb(82, 78, 78));
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.links i{
+    font-size: 30px;
+    cursor: pointer;
+}
