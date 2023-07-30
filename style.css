@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -90,21 +92,24 @@ nav ul li a:hover:after{
 .subtitle{
     font-size: 50px;
     font-weight: 600;
-    color: bisque;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.about-col-2 p{
-    font-size: 28px;
+    color: rgb(11, 195, 195);
     font-style: italic;
+}
+
+.about-col-2 p{
+    font-size: 35px;
     margin-top: 40px;
     color: bisque;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Edu SA Beginner', cursive;
+    /*
+    font-family: 'Amatic SC', cursive;*/
 }
 .s-title{
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 50px 45% 50px 45%;
-    color: bisque;
+    color: rgb(11, 195, 195);
 }
 .s-contents ul{
     display: flex;
@@ -131,7 +136,7 @@ nav ul li a:hover:after{
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 50px 45% 50px 45%;
-    color: bisque;
+    color: rgb(11, 195, 195);
 }
 .project-contents{
     display: grid;
@@ -153,34 +158,12 @@ nav ul li a:hover:after{
     background-color: black;
 }
 .work:hover{
-    box-shadow: 6px 10px 30px -7px rgb(125, 125, 125);
+    box-shadow: 6px 10px 30px -7px rgba(125, 125, 125, 0.591);
 }
 .project-img{
     width: 100%;
     height: 85%;
 }
-/*
-.description{
-    
-    width: 100%;
-    height: 0;
-    /*background: linear-gradient(rgba(0, 0, 0, 0.708),rgb(185, 14, 14));
-    background: linear-gradient(rgba(0 ,0, 0, 0.7), gray);
-    border-radius: 10px;
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 20px;
-    transition: height 0.5s;
-    color: white;
-    text-shadow: 1px 1px 10px white;
-}*/
 .description{
     position: absolute;
     bottom: 0;
@@ -191,6 +174,8 @@ nav ul li a:hover:after{
     width: 100%;
     height: 10%;
     transition: .5s ease;
+    padding: 20px;
+    padding-top: 0;
 }
 .description h2{
     font-weight: 600;
@@ -202,7 +187,7 @@ nav ul li a:hover:after{
 .description .text{
     font-size: 30px;
     margin-top: 60px;
-    
+    color: rgb(11, 195, 195);
 }
 .work:hover .description{
     bottom: 0;
@@ -214,21 +199,26 @@ nav ul li a:hover:after{
     color: white;
     text-decoration: none;
     font-size: 20px;
-    margin-top: 60px;
+    background-color: rgb(45, 45, 45);
+    display: block;
+    text-align: center;
+    width: 40%;
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 30px;
 }
 .description a i{
-    padding: 10px;
-    border-radius: 40px;
-    background-color: azure;
-    color: black;
-    margin: 10px;
+    color: white;
+    margin-left: 10px;
+    font-size: 17px;
 }
 .description a:hover{
-    text-decoration: underline;
-    transition: 0.6s;
+    background-color: rgb(70, 70, 70);
+    transition: 0.3s;
 }
-.description a i:hover{
-    background-color: gray;
+.p-links{
+    display: flex;
+    justify-content: space-between;
 }
 .footer{
     width: 100%;
