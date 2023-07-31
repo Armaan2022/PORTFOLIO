@@ -102,8 +102,6 @@ nav ul li a:hover:after{
     margin-top: 40px;
     color: bisque;
     font-family: 'Edu SA Beginner', cursive;
-    /*
-    font-family: 'Amatic SC', cursive;*/
 }
 .s-title{
     font-size: 50px;
@@ -219,6 +217,13 @@ nav ul li a:hover:after{
 .p-links{
     display: flex;
     justify-content: space-between;
+}
+.coming-soon{
+    margin-bottom: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 .footer{
     width: 100%;
